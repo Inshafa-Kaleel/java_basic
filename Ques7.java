@@ -49,7 +49,7 @@ class AudioBook extends Book {
         System.out.println("Listening to audiobook: " + title);
     }
 }
-// Library class to manage books
+
 class Library {
     private ArrayList<Book> books; // Encapsulated list of books
 
@@ -76,5 +76,27 @@ class Library {
         for (Book book : books) {
             book.read(); // Calls the overridden method based on book type
         }
+    }
+}
+
+public class Ques7 {
+    public static void main(String[] args) {
+        Library myLibrary = new Library();
+
+        // Creating different book types
+        Book book1 = new PrintedBook("Java Programming");
+        Book book2 = new EBook("Data Structures and Algorithms");
+        Book book3 = new AudioBook("Artificial Intelligence Explained");
+
+        // Adding books to the library
+        myLibrary.addBook(book1);
+        myLibrary.addBook(book2);
+        myLibrary.addBook(book3);
+
+        // Display available books
+        myLibrary.showBooks();
+
+        // Read books (Demonstrating Polymorphism)
+        myLibrary.readBooks();
     }
 }
