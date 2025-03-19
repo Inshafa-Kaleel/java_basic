@@ -38,3 +38,14 @@ class EBook extends Book {
         System.out.println("Reading e-book on screen: " + title);
     }
 }
+
+class AudioBook extends Book {
+    public AudioBook(String title) {
+        super(title);
+    }
+
+    @Override
+    void read() {
+        System.out.println("Listening to audiobook: " + title);
+    }
+}
