@@ -49,3 +49,32 @@ class AudioBook extends Book {
         System.out.println("Listening to audiobook: " + title);
     }
 }
+// Library class to manage books
+class Library {
+    private ArrayList<Book> books; // Encapsulated list of books
+
+    public Library() {
+        books = new ArrayList<>();
+    }
+
+    // Method to add books
+    public void addBook(Book book) {
+        books.add(book);
+    }
+
+    // Method to display all books
+    public void showBooks() {
+        System.out.println("\nAvailable Books in the Library:");
+        for (Book book : books) {
+            book.displayInfo();
+        }
+    }
+
+    // Method to simulate reading books (Polymorphism in action)
+    public void readBooks() {
+        System.out.println("\nReading Books:");
+        for (Book book : books) {
+            book.read(); // Calls the overridden method based on book type
+        }
+    }
+}
