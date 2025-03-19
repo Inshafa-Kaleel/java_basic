@@ -21,3 +21,20 @@ class PrintedBook extends Book {
     public PrintedBook(String title) {
         super(title);
     }
+
+ @Override
+    void read() {
+        System.out.println("Reading printed book: " + title);
+    }
+}
+
+class EBook extends Book {
+    public EBook(String title) {
+        super(title);
+    }
+
+    @Override
+    void read() {
+        System.out.println("Reading e-book on screen: " + title);
+    }
+}
