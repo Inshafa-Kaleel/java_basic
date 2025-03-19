@@ -6,3 +6,7 @@ public class Main {
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
         int mid = n / 2;
+
+        for (int i = mid; i >= 1; i--) {
+            System.out.print(i + " ");
+        }
