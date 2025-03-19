@@ -5,3 +5,4 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
+        int mid = n / 2;
