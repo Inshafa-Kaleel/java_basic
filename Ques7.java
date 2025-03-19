@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-// Abstract parent class Book (Encapsulation & Inheritance)
+
 abstract class Book {
     protected String title;  // Encapsulated property
 
@@ -16,3 +16,8 @@ abstract class Book {
         System.out.println("Title: " + title);
     }
 }
+
+class PrintedBook extends Book {
+    public PrintedBook(String title) {
+        super(title);
+    }
