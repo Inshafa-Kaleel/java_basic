@@ -10,3 +10,10 @@ public class Main {
         for (int i = mid; i >= 1; i--) {
             System.out.print(i + " ");
         }
+
+        for (int i = mid + 1; i <= n; i++) {
+            System.out.print(i + " ");
+        }
+        sc.close();
+    }
+}
