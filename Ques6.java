@@ -22,3 +22,14 @@ public class Ques6 {
         students.add(new Student("akee", 90));
         students.add(new Student("fahm", 88));
         students.add(new Student("hamee", 76));
+
+         // Calculate the average marks
+        int totalMarks = 0;
+        for (Student s : students) {
+            totalMarks += s.marks;  // Add each student's marks to total
+        }
+        
+        double averageMarks = (double) totalMarks / students.size();
+        System.out.println("Average Marks: " + averageMarks);
+    }
+}
