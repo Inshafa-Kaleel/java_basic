@@ -53,3 +53,15 @@ class Store {
             product.display();
         }
     }
+
+     public void editProduct(String productName, double newPrice, int newQuantity) {
+        for (Product product : products) {
+            if (product.getName().equalsIgnoreCase(productName)) {
+                product.setPrice(newPrice);
+                product.setQuantity(newQuantity);
+                System.out.println("Product updated: " + product.getName());
+                return;
+            }
+        }
+        System.out.println("Product not found!");
+    }
