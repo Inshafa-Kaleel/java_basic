@@ -86,7 +86,7 @@ public class Ques7 {
         // Creating different book types
         Book book1 = new PrintedBook("Java Programming");
         Book book2 = new EBook("Data Structures and Algorithms");
-        Book book3 = new AudioBook("Artificial Intelligence Explained");
+        Book book3 = new AudioBook("knowladge based system");
 
         // Adding books to the library
         myLibrary.addBook(book1);
