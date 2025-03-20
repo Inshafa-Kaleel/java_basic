@@ -28,3 +28,10 @@ class Product {
     }
 }
 
+class Store {
+    private ArrayList<Product> products;  // Encapsulated list of products
+
+    public Store() {
+        products = new ArrayList<>();
+    }
+
