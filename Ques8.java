@@ -115,3 +115,9 @@ public class Ques8{
                     int newQuantity = sc.nextInt();
                     myStore.editProduct(editName, newPrice, newQuantity);
                     break;
+
+                    case 3: 
+                    System.out.print("Enter product name to delete: ");
+                    String deleteName = sc.nextLine();
+                    myStore.deleteProduct(deleteName);
+                    break;
