@@ -65,3 +65,15 @@ class Store {
         }
         System.out.println("Product not found!");
     }
+
+public void deleteProduct(String productName) {
+        for (int i = 0; i < products.size(); i++) {
+            if (products.get(i).getName().equalsIgnoreCase(productName)) {
+                System.out.println("Product deleted: " + products.get(i).getName());
+                products.remove(i);
+                return;
+            }
+        }
+        System.out.println("Product not found!");
+    }
+}
