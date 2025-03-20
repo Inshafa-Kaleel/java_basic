@@ -121,4 +121,19 @@ public class Ques8{
                     String deleteName = sc.nextLine();
                     myStore.deleteProduct(deleteName);
                     break;
-                    
+
+                    case 4:
+                    myStore.displayProducts();
+                    break;
+
+                case 5: // Exit
+                    System.out.println("Exiting... Thank you for using the system!");
+                    sc.close();
+                    System.exit(0);
+
+                default:
+                    System.out.println("Invalid choice! Please enter a valid option.");
+            }
+        }
+    }
+}
