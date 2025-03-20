@@ -22,4 +22,9 @@ class Product {
     public void setPrice(double price) { this.price = price; }
     public void setQuantity(int quantity) { this.quantity = quantity; }
 
+ 
+    public void display() {
+        System.out.println(name + " - Price: $" + price + " - Quantity: " + quantity);
+    }
+}
 
