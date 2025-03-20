@@ -94,3 +94,14 @@ public class Ques8{
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
             sc.nextLine(); 
+
+            switch (choice) {
+                case 1: 
+                    System.out.print("Enter product name: ");
+                    String name = sc.nextLine();
+                    System.out.print("Enter product price: ");
+                    double price = sc.nextDouble();
+                    System.out.print("Enter product quantity: ");
+                    int quantity = sc.nextInt();
+                    myStore.addProduct(new Product(name, price, quantity));
+                    break;
