@@ -77,3 +77,20 @@ public void deleteProduct(String productName) {
         System.out.println("Product not found!");
     }
 }
+// Main class to test the Store system
+public class Ques8{
+    public static void main(String[] args) {
+        Store myStore = new Store();
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            // Display Menu
+            System.out.println("\nRetail Store Management System");
+            System.out.println("1. Add Product");
+            System.out.println("2. Edit Product");
+            System.out.println("3. Delete Product");
+            System.out.println("4. Display Products");
+            System.out.println("5. Exit");
+            System.out.print("Enter your choice: ");
+            int choice = sc.nextInt();
+            sc.nextLine(); 
