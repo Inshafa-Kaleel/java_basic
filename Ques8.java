@@ -121,3 +121,4 @@ public class Ques8{
                     String deleteName = sc.nextLine();
                     myStore.deleteProduct(deleteName);
                     break;
+                    
