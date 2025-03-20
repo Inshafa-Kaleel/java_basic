@@ -105,3 +105,13 @@ public class Ques8{
                     int quantity = sc.nextInt();
                     myStore.addProduct(new Product(name, price, quantity));
                     break;
+
+                    case 2: 
+                    System.out.print("Enter product name to edit: ");
+                    String editName = sc.nextLine();
+                    System.out.print("Enter new price: ");
+                    double newPrice = sc.nextDouble();
+                    System.out.print("Enter new quantity: ");
+                    int newQuantity = sc.nextInt();
+                    myStore.editProduct(editName, newPrice, newQuantity);
+                    break;
