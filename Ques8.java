@@ -35,3 +35,21 @@ class Store {
         products = new ArrayList<>();
     }
 
+
+    public void addProduct(Product product) {
+        products.add(product);
+        System.out.println("Product added: " + product.getName());
+    }
+
+    
+    public void displayProducts() {
+        if (products.isEmpty()) {
+            System.out.println("\nNo products available in the store.");
+            return;
+        }
+
+        System.out.println("\nAvailable Products:");
+        for (Product product : products) {
+            product.display();
+        }
+    }
